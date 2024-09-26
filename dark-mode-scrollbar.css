@@ -1,0 +1,166 @@
+:root {
+    --background-color: #1e2227;
+    --secondary-bg-color: #252a30;
+    --border-color: #2c3136;
+    --text-color: #e0e0e0;
+    --link-color: #80d0ff;
+    --link-hover-color: #66baff;
+    --card-shadow-color: rgba(0, 0, 0, 0.3);
+    --alert-color: #ff4d4d;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #07080a;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #07080a;
+}
+
+.alert {
+    background-color: var(--alert-color) !important;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+    border: 1.5px solid var(--border-color) !important;
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px var(--card-shadow-color);
+    border-radius: 0;
+}
+
+.submissionstatussubmitted {
+    background-color: rgb(76, 175, 80) !important;
+    color: black !important;
+}
+
+.submissionnotgraded {
+    color: white !important;
+}
+
+.badge {
+    mix-blend-mode: difference !important;
+}
+
+.alert-success {
+    color: white !important;
+    background-color: rgb(76, 175, 80) !important;
+}
+
+.alert-danger {
+    color: white !important;
+}
+
+.navbar {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--text-color) !important;
+    border: 1.5px solid var(--border-color) !important;
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px var(--card-shadow-color);
+}
+
+.navbar-brand, .usertext, .icon, .img {
+    color: var(--text-color) !important;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+.region-main-content, .login-container, .d-print-none {
+    background-color: var(--background-color) !important;
+    border: 1.5px solid var(--border-color) !important;
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 8px var(--card-shadow-color);
+}
+
+.cell {
+    color: var(--text-color);
+    background-color: #161a1e;
+    border: 2px;
+    border-color: var(--border-color) !important;
+}
+
+.lastcol {
+    background-color: #161a1e;
+    color: var(--text-color);
+}
+
+.btn-success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 122, 50);
+    border-color: rgb(185, 208, 183);
+    text-decoration: none;
+}
+
+.tox-tbtn, .tox-mbtn {
+    background-color: var(--secondary-bg-color) !important;
+}
+
+.urlselect, custom-select, .form-control, .dropdown-item,
+.dropdown-menu, .user-report-container, .header, .category-content,
+.level1, .level2, .level3, .level4, .tox-editor-header,
+.tox-menubar, .tox-toolbar__primary, .tox-statusbar__path,
+.tox-statusbar__wordcount, .container-fluid, .footer-popover {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+.activity-dates, .tox-mbtn__select-label {
+    color: var(--text-color) !important;
+}
+
+.activity-item {
+    background-color: var(--secondary-bg-color) !important;
+    color: var(--text-color) !important;
+    border: 1.5px solid var(--border-color) !important;
+    border-radius: 8px;
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px var(--card-shadow-color);
+
+}
+
+.dropdown-divider {
+    border-top: 1px solid var(--border-color) !important;
+}
+
+.activity-header {
+    background-color: var(--background-color) !important;
+}
+
+.region-main {
+    background-color: var(--secondary-bg-color) !important;
+    border: 1.5px solid var(--border-color) !important;
+}
+
+.col-12, .blockcolumn {
+    background-color: var(--secondary-bg-color) !important;
+}
+
+[id^="yui"] {
+    color: white !important;
+}
+
+
