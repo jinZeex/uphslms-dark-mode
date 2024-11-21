@@ -16,7 +16,7 @@ Heavily based off of [Ateneo de Manila University's Moodle](https://github.com/d
 - [X] Reports, Calendars, Grades
 - [X] Messages
 - [ ] Quizzes
-- [ ] Proper Text Boxes for Task Submissions
+- [ ] Dark textboxes for online text submissions (Not possible)
 
 <h2>Contributing</h2>
 
