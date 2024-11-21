@@ -20,7 +20,7 @@ Heavily based off of [Ateneo de Manila University's Moodle](https://github.com/d
 
 <h2>Contributing</h2>
 
-I recommend using [Inspect CSS](https://chromewebstore.google.com/detail/inspect-css/fbopfffegfehobgoommphghohinpkego) for this.
+I recommend using [Inspect CSS](https://chromewebstore.google.com/detail/inspect-css/fbopfffegfehobgoommphghohinpkego) for this. Click the extension, and then select an element from anywhere.
 
 <h3>Color Pallete</h3>
 
