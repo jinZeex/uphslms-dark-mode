@@ -1,166 +1,267 @@
-:root {
-    --background-color: #1e2227;
-    --secondary-bg-color: #252a30;
-    --border-color: #2c3136;
-    --text-color: #e0e0e0;
-    --link-color: #80d0ff;
-    --link-hover-color: #66baff;
-    --card-shadow-color: rgba(0, 0, 0, 0.3);
-    --alert-color: #ff4d4d;
+/* ==UserStyle==
+@name         UPHSL LMS Dark Mode (Scrollbar)
+@version      20240927.03.42
+@namespace    https://userstyles.world/user/jinZeex
+@description  A primitive dark mode for the UPHSL LMS website, which lacks it.
+@author       jinZeex
+@license      No License
+==/UserStyle== */
+
+@-moz-document url-prefix("https://uphslms.com/blended/") {
+    :root {
+        --background-color: #1e2227;
+        --secondary-bg-color: #252a30;
+        --border-color: #2c3136;
+        --text-color: #e0e0e0;
+        --link-color: #80d0ff;
+        --link-hover-color: #66baff;
+        --card-shadow-color: rgba(0, 0, 0, 0.3);
+        --alert-color: #ff4d4d;
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+
+
+    ::-webkit-scrollbar-track {
+        background: var(--secondary-bg-color);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #07080a;
+        border-radius: 10px;
+    }
+
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #07080a;
+    }
+
+    .alert {
+        background-color: var(--alert-color) !important;
+        border-radius: 5px;
+        color: white !important;
+    }
+    
+
+    .card {
+        background-color: var(--background-color) !important;
+        color: var(--text-color) !important;
+        border: 1.5px solid var(--border-color) !important;
+        border-color: var(--border-color);
+        box-shadow: 0 2px 8px var(--card-shadow-color);
+        border-radius: 0;
+    }
+
+    .submissionstatussubmitted,
+    .submissiongraded {
+        background-color: rgb(76, 175, 80) !important;
+        color: black !important;
+    }
+
+    .submissionnotgraded {
+        color: white !important;
+    }
+
+    .alert-success {
+        color: white !important;
+        background-color: rgb(76, 175, 80) !important;
+    }
+
+    .alert-danger {
+        color: white !important;
+    }
+
+    .navbar {
+        background-color: var(--secondary-bg-color) !important;
+        color: var(--text-color) !important;
+        border: 1.5px solid var(--border-color) !important;
+        border-color: var(--border-color);
+        box-shadow: 0 2px 8px var(--card-shadow-color);
+    }
+
+    .navbar-brand,
+    .usertext,
+    .icon,
+    .img {
+        color: var(--text-color) !important;
+    }
+
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+    }
+
+    a:hover {
+        color: var(--link-hover-color);
+        text-decoration: underline;
+    }
+
+    .region-main-content,
+    .login-container,
+    .tox,
+    .tox-tbtn,
+    .tox-toolbar,
+    .tox-top__dialog,
+    .user-report-container,
+    .table,
+    .modal-content,
+    .section-summary {
+        background-color: var(--background-color) !important;
+        border: 1.5px solid var(--border-color) !important;
+        color: var(--text-color);
+        border-radius: 5px;
+        box-shadow: 0 2px 8px var(--card-shadow-color);
+    }
+
+    .tox-editor-header,
+    .tox-menubar,
+    .tox-toolbar__primary,
+    .tox-toolbar__group,
+    .container-fluid,
+    .tox-statusbar__path,
+    .moodle-dialogue-hd,
+    .moodle-dialogue-bd,
+    .fp-filename,
+    .tox-toolbar-overlord,
+    .header,
+    .p-3,
+    .content-message-container,
+    .border-bottom,
+    .section,
+    .closewidget,
+    .dashboard-card-footer,
+    .bg-white {
+        background-color: var(--background-color) !important;
+        color: white !important;
+    }
+
+    .cell {
+        color: var(--text-color);
+        background-color: #161a1e;
+        border: 2px;
+        border-color: var(--border-color) !important;
+    }
+
+    .lastcol {
+        background-color: #161a1e;
+        color: var(--text-color);
+    }
+
+    .btn-success {
+        color: rgb(255, 255, 255);
+        background-color: rgb(53, 122, 50);
+        border-color: rgb(185, 208, 183);
+        text-decoration: none;
+    }
+
+    .btn {
+        color: var(--text-color) !important;
+        background-color: var(--secondary-bg-color) !important;
+    }
+
+    path {
+        fill: white;
+    }
+
+
+    .tox-mbtn,
+    .tox-tbtn__select-label {
+        background-color: var(--secondary-bg-color) !important;
+        color: white !important;
+    }
+
+
+    .tox-tbtn {
+        background-color: var(--secondary-bg-color) !important;
+    }
+
+    .tox-edit-area__iframe {
+        background-color: var(--background-color) !important;
+        color: var(--text-color) !important;
+    }
+    
+    #id_onlinetext_editor_ifr {
+        background-color: var(--secondary-bg-color) !important;
+        color: var(--text-color) !important;
+    }
+
+    .urlselect,
+    .custom-select,
+    .select,
+    .custom-select,
+    .form-control,
+    .dropdown-item,
+    .dropdown-menu,
+    .user-report-container,
+    .header,
+    .category-content,
+    .level1,
+    .level2,
+    .level3,
+    .level4,
+    .tox-editor-header,
+    .tox-menubar,
+    .tox-toolbar__primary,
+    .tox-statusbar__path,
+    .tox-statusbar__wordcount,
+    .tox-edit-area,
+    .tox-statusbar,
+    .tox-editor-header,
+    .footer-popover,
+    .flex-column,
+    .list-group-item,
+    .modal-footer,
+    .modal-header,
+    .modal-body {
+        background-color: var(--secondary-bg-color) !important;
+        color: var(--text-color) !important;
+    }
+
+    .activity-dates,
+    .tox-mbtn__select-label,
+    .tox-statusbar__path-item {
+        color: var(--text-color) !important;
+    }
+
+    .activity-item {
+        background-color: var(--secondary-bg-color) !important;
+        color: var(--text-color) !important;
+        border: 1.5px solid var(--border-color) !important;
+        border-radius: 8px;
+        border-color: var(--border-color);
+        box-shadow: 0 2px 8px var(--card-shadow-color);
+    }
+
+    .dropdown-divider {
+        border-top: 1px solid var(--border-color) !important;
+    }
+
+    .mb-3,
+    .progress-text {
+        color: var(--text-color) !important;
+    }
+
+    .activity-header,
+    .row,
+    .container-fluid {
+        background-color: var(--background-color) !important;
+    }
+
+    .region-main {
+        background-color: var(--secondary-bg-color) !important;
+        border: 1.5px solid var(--border-color) !important;
+    }
+
+    .col-12,
+    .blockcolumn {
+        background-color: var(--secondary-bg-color) !important;
+    }
+
+    [id^="yui"] {
+        color: white !important;
+    }
 }
-
-::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-}
-
-
-::-webkit-scrollbar-track {
-    background: var(--secondary-bg-color);
-}
-
-::-webkit-scrollbar-thumb {
-    background: #07080a;
-    border-radius: 10px;
-}
-
-
-::-webkit-scrollbar-thumb:hover {
-    background: #07080a;
-}
-
-.alert {
-    background-color: var(--alert-color) !important;
-    border-radius: 5px;
-}
-
-.card {
-    background-color: var(--background-color) !important;
-    color: var(--text-color) !important;
-    border: 1.5px solid var(--border-color) !important;
-    border-color: var(--border-color);
-    box-shadow: 0 2px 8px var(--card-shadow-color);
-    border-radius: 0;
-}
-
-.submissionstatussubmitted {
-    background-color: rgb(76, 175, 80) !important;
-    color: black !important;
-}
-
-.submissionnotgraded {
-    color: white !important;
-}
-
-.badge {
-    mix-blend-mode: difference !important;
-}
-
-.alert-success {
-    color: white !important;
-    background-color: rgb(76, 175, 80) !important;
-}
-
-.alert-danger {
-    color: white !important;
-}
-
-.navbar {
-    background-color: var(--secondary-bg-color) !important;
-    color: var(--text-color) !important;
-    border: 1.5px solid var(--border-color) !important;
-    border-color: var(--border-color);
-    box-shadow: 0 2px 8px var(--card-shadow-color);
-}
-
-.navbar-brand, .usertext, .icon, .img {
-    color: var(--text-color) !important;
-}
-
-a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-}
-
-a:hover {
-    color: var(--link-hover-color);
-    text-decoration: underline;
-}
-
-.region-main-content, .login-container, .d-print-none {
-    background-color: var(--background-color) !important;
-    border: 1.5px solid var(--border-color) !important;
-    color: var(--text-color);
-    border-radius: 5px;
-    box-shadow: 0 2px 8px var(--card-shadow-color);
-}
-
-.cell {
-    color: var(--text-color);
-    background-color: #161a1e;
-    border: 2px;
-    border-color: var(--border-color) !important;
-}
-
-.lastcol {
-    background-color: #161a1e;
-    color: var(--text-color);
-}
-
-.btn-success {
-    color: rgb(255, 255, 255);
-    background-color: rgb(53, 122, 50);
-    border-color: rgb(185, 208, 183);
-    text-decoration: none;
-}
-
-.tox-tbtn, .tox-mbtn {
-    background-color: var(--secondary-bg-color) !important;
-}
-
-.urlselect, custom-select, .form-control, .dropdown-item,
-.dropdown-menu, .user-report-container, .header, .category-content,
-.level1, .level2, .level3, .level4, .tox-editor-header,
-.tox-menubar, .tox-toolbar__primary, .tox-statusbar__path,
-.tox-statusbar__wordcount, .container-fluid, .footer-popover {
-    background-color: var(--secondary-bg-color) !important;
-    color: var(--text-color) !important;
-}
-
-.activity-dates, .tox-mbtn__select-label {
-    color: var(--text-color) !important;
-}
-
-.activity-item {
-    background-color: var(--secondary-bg-color) !important;
-    color: var(--text-color) !important;
-    border: 1.5px solid var(--border-color) !important;
-    border-radius: 8px;
-    border-color: var(--border-color);
-    box-shadow: 0 2px 8px var(--card-shadow-color);
-
-}
-
-.dropdown-divider {
-    border-top: 1px solid var(--border-color) !important;
-}
-
-.activity-header {
-    background-color: var(--background-color) !important;
-}
-
-.region-main {
-    background-color: var(--secondary-bg-color) !important;
-    border: 1.5px solid var(--border-color) !important;
-}
-
-.col-12, .blockcolumn {
-    background-color: var(--secondary-bg-color) !important;
-}
-
-[id^="yui"] {
-    color: white !important;
-}
-
-
