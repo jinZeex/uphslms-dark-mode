@@ -13,6 +13,7 @@ Heavily based off of [Ateneo de Manila University's Moodle](https://github.com/d
 - [X] Tasks
 - [X] Alerts
 - [X] Website Theme itself
+- [X] Reports, Calendars, Grades
 - [X] Messages
 - [ ] Quizzes
 - [ ] Proper Text Boxes for Task Submissions
