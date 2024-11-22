@@ -61,8 +61,8 @@
         color: black !important;
     }
 
-    .submissionnotgraded {
-        color: white !important;
+    .badge {
+        mix-blend-mode: difference !important;
     }
 
     .alert-success {
@@ -70,9 +70,20 @@
         background-color: rgb(76, 175, 80) !important;
     }
 
-    .alert-danger {
+    .alert-danger,
+    .tox-collection__item-label,
+    .tox-collection__item-accessory,
+    .submissionnotgraded
+    {
         color: white !important;
     }
+    
+    [id^="menu-item"]:hover .tox-collection__item-label,
+    [id^="menu-item"]:hover .tox-collection__item-accessory
+    {
+        color: black !important;
+    }
+
 
     .navbar {
         background-color: var(--secondary-bg-color) !important;
@@ -118,9 +129,12 @@
     }
 
     .tox-editor-header,
+    .tox-tinymce,
     .tox-menubar,
     .tox-toolbar__primary,
+    .tox-menu,
     .tox-toolbar__group,
+    .tox-toolbar__overflow--open,
     .container-fluid,
     .tox-statusbar__path,
     .moodle-dialogue-hd,
@@ -136,7 +150,7 @@
     .dashboard-card-footer,
     .bg-white {
         background-color: var(--background-color) !important;
-        color: white !important;
+        color: var(--text-color) !important;
     }
 
     .cell {
@@ -160,7 +174,7 @@
 
     .btn {
         color: var(--text-color) !important;
-        background-color: var(--secondary-bg-color) !important;
+        background-color: var(--background-color) !important;
     }
 
     path {
@@ -169,28 +183,18 @@
 
 
     .tox-mbtn,
+    .tox-tbtn,
     .tox-tbtn__select-label {
         background-color: var(--secondary-bg-color) !important;
         color: white !important;
-    }
-
-
-    .tox-tbtn {
-        background-color: var(--secondary-bg-color) !important;
     }
 
     .tox-edit-area__iframe {
         background-color: var(--background-color) !important;
         color: var(--text-color) !important;
     }
-    
-    #id_onlinetext_editor_ifr {
-        background-color: var(--secondary-bg-color) !important;
-        color: var(--text-color) !important;
-    }
 
     .urlselect,
-    .custom-select,
     .select,
     .custom-select,
     .form-control,
@@ -205,7 +209,6 @@
     .level4,
     .tox-editor-header,
     .tox-menubar,
-    .tox-toolbar__primary,
     .tox-statusbar__path,
     .tox-statusbar__wordcount,
     .tox-edit-area,
@@ -216,6 +219,7 @@
     .list-group-item,
     .modal-footer,
     .modal-header,
+    .modal-content,
     .modal-body {
         background-color: var(--secondary-bg-color) !important;
         color: var(--text-color) !important;
@@ -227,7 +231,8 @@
         color: var(--text-color) !important;
     }
 
-    .activity-item {
+    .activity-item,
+    .card-body {
         background-color: var(--secondary-bg-color) !important;
         color: var(--text-color) !important;
         border: 1.5px solid var(--border-color) !important;
@@ -246,9 +251,12 @@
     }
 
     .activity-header,
-    .row,
-    .container-fluid {
+    .row {
         background-color: var(--background-color) !important;
+    }
+    
+    .pagelayout-login #page {
+        background-image: none !important;
     }
 
     .region-main {
